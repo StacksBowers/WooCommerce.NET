@@ -392,6 +392,7 @@ namespace WooCommerceNET
             DataContractJsonSerializerSettings settings = new DataContractJsonSerializerSettings()
             {
                 DateTimeFormat = new DateTimeFormat(DateTimeFormat),
+                KnownTypes = new List<Type>() { typeof(string[]) },
                 UseSimpleDictionaryFormat = true
             };
 
